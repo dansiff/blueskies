@@ -3,13 +3,26 @@ import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 1rem 0.5rem;
+  background: #000080;
+  Width: 100%;
 
   .ant-row-space-between {
     align-items: center;
     text-align: center;
   }
 `;
+export const LogoText = styled.h1`
+font - family: 'Motiva Sans Bold', Sans - serif;
+color: #fff;
+font - size: 2rem;
+font - weight: 700;
+margin: 0;
+`;
+
 
 export const LogoContainer = styled(Link)`
   display: flex;
